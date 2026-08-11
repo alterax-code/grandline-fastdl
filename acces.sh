@@ -2,7 +2,7 @@
 # Autorise la cle SSH du poste de dev (cle PUBLIQUE) pour alterax et root.
 # Idempotent : relancer ne duplique rien, n'ecrase rien.
 set -e
-KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHxSBGZ0r+7zX1B/IJCKFGCFdYDX9Uqmc9bJWfxbI0YY grandline-vps"
+KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDH0P29V+jduSLAOAjTOzh93o73KVRZFKg+ZjaaBeLkO grandline-vps2"
 for u in alterax root; do
   home=$(getent passwd "$u" | cut -d: -f6)
   [ -n "$home" ] || continue
